@@ -33,7 +33,8 @@ function HorasTrabalhadas() {
         totalHours += hours;
       }
     });
-    return totalHours.toFixed(2);
+    const formattedHours = moment.utc(totalHours * 60 * 60 * 1000).format('HH:mm');
+    return formattedHours;
   };
 
   return (
