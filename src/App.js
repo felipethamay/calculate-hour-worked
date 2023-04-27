@@ -1,3 +1,4 @@
+import React from 'react'
 import "./App.css";
 import HorasTrabalhadas from "./components/HorasTrabalhadas";
 
