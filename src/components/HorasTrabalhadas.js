@@ -41,7 +41,7 @@ function HorasTrabalhadas() {
     <div className="container">
       <h1>Calculadora de Horas Trabalhadas</h1>
       {timeEntries.map(entry => (
-        <div key={entry.id}>
+        <div key={entry.id} className="time-entry">
           <label htmlFor={`start${entry.id}`}>Entrada:</label>
           <InputMask
             mask="99:99"
